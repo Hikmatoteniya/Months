@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 300px;
+            gap: 10px;
+        }
+        #input1{
+            width: 400px;
+            height: 50px;
+            outline: none;
+            padding: 10px;
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            background-color: peachpuff;
+            border-radius: 10px;
+            border: 1px solid peachpuff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Month and days</h1>
+        <input type="text" id="input1" placeholder="Enter your month to know how many days are in it">
+        <button onclick="check()">Check</button>
+    </div>
+</body>
+</html>
+
+<script>
+    let myHtmlBody = document.body
+    myHtmlBody.style.backgroundColor = 'hotpink'
+    let myInput = document.getElementById('input1')
+    
+    function check() {
+        let monthOne = 'january'
+        let monthTwo = 'March'
+        let monthThree = 'may'
+        let monthFour = 'july'
+        let monthFive = 'august'
+        let monthSix = 'october'
+        let monthSeven = 'december'
+        let monthEight = 'september'
+        let monthNine = 'jpril'
+        let monthTen = 'june'
+        let monthEleven = 'november'
+        let monthTwelve = 'february'
+       if (myInput.value.trim().toLowerCase() === monthOne) {
+            alert('There are 31 days in this month')
+       } else if (myInput.value.trim().toLowerCase() === monthTwo){
+            alert('There are 31 days in this month')
+       } else if(myInput.value.trim().toLowerCase() === monthThree){
+            alert('There are 31 days in this month')
+       } else if (myInput.value.trim().toLowerCase() === monthFour){
+            alert('There are 31 days in this month')
+       } else if (myInput.value.trim().toLowerCase() === monthFive){
+            alert('There are 31 days in this month')
+       } else if (myInput.value.trim().toLowerCase() === monthSix){
+            alert('There are 31 days in this month')
+       } else if (myInput.value.trim().toLowerCase() === monthSeven){
+            alert('There are 31 days in this month')
+       } else if (myInput.value.trim().toLowerCase() === monthEight){
+            alert('There are 30 days in this month')
+       } else if (myInput.value.trim().toLowerCase() === monthNine){
+            alert('There are 30 days in this month')
+       } else if (myInput.value.trim().toLowerCase() === monthTen){
+            alert('There are 30 days in this month')
+       } else if (myInput.value.trim().toLowerCase() === monthEleven){
+            alert('There are 30 days in this month')
+       } else if (myInput.value.trim().toLowerCase() === monthTwelve){
+            alert('There are 28/29 days in this month')
+       } else {
+        alert('Invalid Day. Please enter  valid month')
+       }
+    }
+</script>
